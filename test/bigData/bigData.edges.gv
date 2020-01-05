@@ -1,0 +1,43 @@
+digraph bigData {
+/* Nodes */
+    0 [label="NGS Projects"];
+    1 [label="wait for marks"];
+    2 [label="Post-mortem"];
+    3 [label="Workshop deadlines"];
+    4 [label="add dates to assignments"];
+    5 [label="wait for deadlines"];
+    6 [label="collect submissions"];
+    7 [label="Mark assignments"];
+    8 [label="Linux"];
+    9 [label="R"];
+    10 [label="Epi workshop"];
+    11 [label="return assignment marks"];
+    12 [label="Course feedback"];
+    13 [label="send out feedback forms"];
+    14 [label="wait for replies"];
+    15 [label="collect feedback"];
+    16 [label="Write funders' report"];
+    17 [label="Archive course content"];
+    18 [label="Final team meeting"];
+    19 [label="set date"];
+    20 [label="wait for date"];
+    21 [label="collect meeting feedback"];
+    22 [label="write final report"];
+    23 [label="archive project"];
+/* Edges */
+    0 -> 7
+    1 -> 2
+    2 -> 3
+    3 -> 6
+    {4,5,6} -> 7
+    7 -> 11
+    8 -> 9
+    9 -> 10
+    10 -> 11
+    11 -> 13
+    12 -> 16
+    13 -> 14
+    14 -> 15
+    15 -> 16
+    16 -> 17
+}

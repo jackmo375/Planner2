@@ -1,0 +1,40 @@
+digraph research {
+/* Nodes */
+    0 [label="rev.protocol"];
+    1 [label="rev.dataCapture"];
+    2 [label="rev.referenceList"];
+    3 [label="rev.reviewMatrix"];
+    4 [label="rev.summary"];
+    5 [label="rev.narrative"];
+    6 [label="rev.manuscript"];
+    7 [label="pan.metricClass"];
+    8 [label="pan.significanceTest"];
+    9 [label="pan.typeCover"];
+    10 [label="pan.oddsRatios"];
+    11 [label="pan.manuscript"];
+    12 [label="pan.publishedCode"];
+    13 [label="mom.metricChain"];
+    14 [label="mom.significanceTest"];
+    15 [label="mom.typeCover"];
+    16 [label="mom.oddsRatios"];
+    17 [label="mom.manuscript"];
+    18 [label="mom.publishedCode"];
+/* Edges */
+    0 -> 1
+    1 -> 2
+    2 -> 3
+    3 -> 4, 7
+    4 -> 5
+    5 -> 6
+    6 -> 11
+    7 -> 8
+    8 -> 9
+    9 -> 10
+    10 -> 11, 13
+    11 -> 12, 17
+    13 -> 14
+    14 -> 15
+    15 -> 16
+    16 -> 17
+    17, 12 -> 18
+}

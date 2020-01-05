@@ -1,0 +1,189 @@
+﻿"ID","ID","ID",Name,Status,Started,Completed,Priority,Start,Due,Assignee,Created,Created by,Description
+53,,,rev.protocol,To-Do,,,Medium,,,,28 Dec 2019,Jack Morrice,"type: document
+purpose:  to specify the whole literature process precisely, search such that the resulting reference list can be recovered reproducibly.
+contents:
+1. review research question
+2. list of all databases to be searched
+3. all search strategies, including wildcards, tailored for each database
+4. details of other search methods, e.g. hand searching journal TOCs
+5. manual-screening eligibility criteria, for both title & abstract, as well as full text, filtering. comments: the joanna briggs institute has good advice for this available free. "
+55,,,rev.dataCapture,To-Do,,,Medium,,,,28 Dec 2019,Jack Morrice,"type: template, explanation of template
+purpose:  to specify the information to be extracted from each literature source in the reference list
+contents:
+1. a .txt or .md document containing a sequence of headings specifying the kinds of data to be extracted from each source in the reference list
+2. a guide explaining what is meant to be collected under each heading, as well as possibly an examplecomments: The template should be copied whenever it is used to extract data from a new source. We will use a tag system for each note that we create from this template for each source:
+- ""u"" means unfinished note
+- ""c"" means completed noteThis template probably needs to be tested before we use it properly. 
+It is important that the information be accessible by tools like grep, or even some R functions. This will mean that drawing helpful info-graphics can be done quickly. So, some entries will be numerical, some will be levels, so that we can draw bar charts. We also need to design a text format so that the data can be reprinted in different ways, e.g. ""extract all responses from heading 3"". "
+54,,,rev.referenceList,To-Do,,,Medium,,,,28 Dec 2019,Jack Morrice,"type: Zotero collection, report
+purpose:  to index pds of all the papers with their bib entries to be covered in this review in one list, and the notes for the review matrix.
+contents:
+1. complete bib entry/record for each source to be included in the review
+1. where possible, link to the pdf in the paper library
+1. a separate report briefly summarising:
+    - the final number of papers included;
+    - how many were initially found, by automatic searches and otherwise;
+    - how many were filtered out based on both title and abstract filters, as well as full text filters;
+    - and how many duplicates were removed. comments: we don't need to link each source to the review matrix note yet, not even to a blank one. This will be part of a later task. "
+56,,,rev.reviewMatrix,To-Do,,,Medium,,,,28 Dec 2019,Jack Morrice,"type: directory of notes indexed by a zotero collection
+purpose:  contains all the data extracted from each paper in the reference list, using the data extraction form. 
+contents:
+1. a directory of notes, called ""Matrix"", saved in the relevant sub-directory of ""Drive"", where each note is the completed data extraction form template for each source in the reference list. The notes will be saved in a directory tree where the levels are the same as the paper library, such that:
+    - each note is indexed to the correct item in the reference list (Zotero collection), forming an annotation of that item. 
+    - the name of each note should be the same as the label of the source's pdf, if the source has a pdf version saved in the paper library. 
+    - the finished/unfinished status of the note should be recorded as a tag, ""c""/""u""comments: It is a matrix in the sense that columns represent fields in the data capture form, and rows represent papers in the list. (It doesn't need to actually be saved as a spreadsheet.)"
+61,,,"rev.summary",To-Do,,,Medium,,,,28 Dec 2019,Jack Morrice,"type: document
+purpose:  a short summary of the review matrix, to be used in writing the review
+contents:
+in this summary we will write, of the review matrix:
+1. any prominent/recurrent themes, along with some examples from the reference list
+1. useful classifications of the sources, e.g. by kind of study, field of medicine, results obtained etc. The classifications can also be saved as tags on items in the reference list (Zotero collection).  
+1. key results, with examples
+1. conflicts between results, or between opinions held by the authors in the reference list, with examples
+1. gaps in the research as described by the reference list, where more research is needed.comments: The document is to be internal, for use by any members of the review process, or anyone managing the work. It will serve as a milestone for the project, and one of the mid-term status reports."
+62,,,rev.narrative,To-Do,,,Medium,,,,28 Dec 2019,Jack Morrice,"type: document
+purpose:  a proposed narrative that organises the summary document into a story with a logical flow, to be used in writing the review
+contents:
+using content of the summary document and elements of the full review matrix:
+1. a sequence of the high level topics to cover
+1. notes on the rationale behind the sequence, including how to join one topic to the next
+1. comments on possible sources of reviewer bias, and any reviewer opinions of the reviewed content with respect to the initial research questioncomments: this document will serve as a milestone for the project tracking. It can be in note form, since it is an internal document. "
+63,,,rev.manuscript,To-Do,,,Medium,,,,28 Dec 2019,Jack Morrice,"type: document
+purpose:  the review article that will be submitted to the journal, and the endpoint of the review project
+contents:
+the content of the summary document, organised by the narrative document. The actual sections will be determined when the content is clear, however we will require:
+1. a title, with the term ""scoping review"" somewhere
+2. a structured abstract
+3. an introduction
+4. a methods section, including description of the protocol, and the reference list report, with PRISMA flow diagram
+5. results section, subheadings determined by the content of the summary and narrative documents
+6. discussion and conclusioncomments: Best to follow the PRISMA statement on scoping reviews for this. 
+Not sure yet if the best tool will be overleaf, or google docs. Since the length should be no more than 15 pages, both are fine in this regard. What will decide is the number of equations and maths items to be included. "
+31,,,pan.metricClass,To-Do,,,Medium,,,,28 Dec 2019,Jack Morrice,"type: computer program, report
+purpose: to compute the similarity, for some chosen similarity metric, between two patients in a sample, based on their genome data
+functionality:
+expected types of input:
+1. the genomes (or part of) of two patients
+1. clinician choices
+1. accuracy parameterstypes of desired output:
+1. the similarity between the two patients
+1. confidence levels (if applicable)constraints:
+1. should be capably run by a decent laptop
+1. should be robust against (some) missing datathe report needs to contain:
+1. description of the high level program design, including philosophy, modular structure, main algorithms
+1. any relevant bench-marking information
+1. results of simulation tests, and tests on real data
+1. known bugs
+1. potential improvements or expansionscomments: implemented in Julia as a usable program. The word ""class"" refers to the parameterisation, and freedom in clinical input, of the metric as a program. Design more than one—say 3 qualitatively different metric classes—and then chose the best one moving forward. Include all this in the program report."
+38,,,pan.significanceTest,To-Do,,,Medium,,,,28 Dec 2019,Jack Morrice,"type: statistical test, report
+purpose:  to evaluate the significance of a similarity threshold for a given metric and classification algorithm
+functionality:
+given the following conditions:
+1. a metric (metric class with all options fixed)
+2. a sample (from a population)
+3. a classification algorithmthe test evaluates:
+- the significance (in p-values) of a given classification thresholdthe report needs to contain:
+1. how the test was designed (rationale)
+1. the scope of the test (when does it make sense to use, and when is it invalid)
+1. how the test is to be used (best practice)comments: The tests should join to the metrics in a pipeline. We will probably need a qualitatively different test for qualitatively different metrics. A key part of the test is the null hypothesis model, which will be hard to design. "
+32,,,pan.typeCover,To-Do,,,Medium,,,,28 Dec 2019,Jack Morrice,"type: classification, report
+purpose:  a precise description of the population of sickle cell patients of African ancestry in terms of genome profiles with which to tailor treatment
+properties:
+1. based on a distance/similarity metric
+1. membership criteria determined with proxies, and metric thresholds computed based on p-values
+1. based on components, rather than clusters
+1. stable
+1. significantthe report needs to contain:
+1. exact metric used, including all options
+1. the classification algorithm used
+1. significance results, and how the test was applied, with plots
+1. stability analysis results, with plots
+1. description of the implementation of the classification rule, say as a program in the pipeline. comments: technically speaking, the classification should be a rule, that takes as input some point in the data space, and outputs the type(s) of that point. (By contrast, a component is a subset of the sample data set). Since we are using components rather than clusters, we can't use centroids as proxies, but we can choice proxies in other ways. The best way will be, rather than picking which type does this patients most likely belong to, to use proxies and associated distance measures, and membership will be determined by cut-offs. This makes the classification a cover rather than a partition.  "
+33,,,pan.oddsRatios,To-Do,,,Medium,,,,28 Dec 2019,Jack Morrice,"type: statistic, report
+purpose:  quantifies relative risks, for a chosen set of malign phenotype and/or treatment response, for each type in the cover 
+properties:
+1. each ratio is computed for a given type and malign phenotype risk with respect to a healthy control population
+2. the ""profile"" is the set of all ratios for a chosen set of malign phenotype, or drug response, for fixed type. the report needs to contain:
+1. list and description of all types in the cover
+1. details of the malign phenotype / treatment response set
+1. the odds ratio profiles for each type
+1. details of the calculation of each profile, as well as confidence details.comments:
+We will store the statistic itself as an array of values, but also the commented script that produced those exact values, with all parameter values. 
+ we might have to recompute the type cover many times, and then recompute the odds ratio profiles for the cover, such that we end up with the sharpest, or most informative, odds ratio profiles. So, in the previous items, we ask for a type cover, or a metric class. In those cases we were asking for the method, or proof of principle. Here, we want the best odds ratio profiles, which will mean going back through the process again several times till we find the best. Thus, completion of this task requires looping over metricClass, significanceTest, typeCover, and oddsRatios until we have an optimum solution. The report will need to contain information of this iterative process."
+34,,,pan.manuscript,To-Do,,,Medium,,,,28 Dec 2019,Jack Morrice,"type: document
+purpose:  the draft article to be submitted to a relevant journal that summarises the panGenome work.
+contents:
+1. structured abstract
+1. introduction using the literature review
+1. summary of reports on the WBS items for this project
+1. discussion and conclusioncomments: for each of the above artifacts (metricClass, significanceTest, typeCover, oddsRatios) we will be writing a short report on completion—this article will mostly be a summary of those reports, tailored to our chosen journal and audience.  When creating any figures for the article, like a plot, it is important that the script and data set that the figure is built from are saved with it together, so we can redesign it, say for a presentation, at a later stage. "
+42,,,pan.publishedCode,To-Do,,,Medium,,,,28 Dec 2019,Jack Morrice,"type: publicly available program 
+purpose:  to compute a classification of some population based on a sample of genome data, and the odds ratio profiles, for each category in the classification, of a set of malign phenotypes and treatment responses
+functionality:
+expected types of input:
+1. metric (metric class with all options fixed)
+1. a genome sample that is representative of a desired population
+1. a set of malign phenotypes, and recorded treatment responses, as recorded in the sample data set. types of desired output:
+1. a type cover
+1. odds ratio profiles for the cover
+1. confidence levels, both in the type cover itself, and in the odds ratio profiles. 
+1. graphical visualisation of the components, the proxies, the action of the metric used. constraints: must be able to run on a small number of supercomputer cores in parallel, but must also run on a decent laptop if the data is small enough. comments: saved as a Github ""project"", alongside working examples, a reference manual, and some small tutorials. The program will be a consolidation of the entire panGenome pipeline. We should publish to Github as soon as we submit the paper for publication, so that the journal reviewers can see it. "
+34,,,mom.metricChain,To-Do,,,Medium,,,,28 Dec 2019,Jack Morrice,"type: program, report
+purpose:  to compute the similarity of two patients in a sample, given some defined similarity metric chain, based on: a) each omic layer separately; b) multiple omic layers combined.
+functionality:
+expected types of input:
+1. the multiomes of two patients (or any individual layer, though the layers must be the same for each patient)
+1. clinician choices (expert input)
+1. omic layer weights / normalisations
+1. accuracy parameter argumentstypes of desired output:
+1. the similarity of the two patients
+1. confidence of the similarity valueconstraints:
+For certain conservative parameter choices or small input data, the metric must be computable on a decent laptop. This is a necessary requirement, so that users can debug and test out the code without submitting jobs to black-box computer cluster queues. the report needs to contain:
+1. description of how the metric chain was extended, and rationale
+1. description of the high level program design, including philosophy, modular structure, main algorithms
+1. any relevant bench-marking information
+1. results of simulation tests, and tests on real data
+1. known bugs
+1. potential improvements or expansions
+1. it can be an extension of the metric class report made for panGenomecomments: we extend the best metric class from the pan-genome project into a chain of similarity metric classes over the pan-genome, pan-epigenome, pan-transcriptome, and possibly pan-proteome. We need to be able to compute the similarity for each omic layer individually, as well as for all the layers together (or any number of omic layer combinations). The composite metrics will need weighting systems, and these choices will be inputs. A machine learning algorithm might wrap around this metric chain and automatically fit best values for the weights, but that will come later. "
+35,,,mom.significanceTest,To-Do,,,Medium,,,,28 Dec 2019,Jack Morrice,"type: statistical test, report
+purpose:  to evaluate the significance of a similarity threshold for a given composite metric and classification algorithm
+functionality:
+given the following conditions:
+1. a metric (a composite metric class with all options fixed)
+2. a sample (from a population)
+3. a classification algorithmthe test evaluates:
+- the significance (in p-values) of a given classification thresholdThe report can just be an extension or update of the significanceTests report made for panGenome. comments: The composite metric means in general a weighted combination of metrics across some or all layers of a fixed chain.If we have completed panGenome.metricClass properly, this task should be very fast, or even need no work at all. The issue deciding this will be: how much does the test depend on the underlying metric, and on the kinds of input patient data used?"
+36,,,mom.typeCover,To-Do,,,Medium,,,,28 Dec 2019,Jack Morrice,"type: classification
+purpose:  a precise description of the population of sickle cell patients of African ancestry in terms of multi-omic profiles with which to tailor treatment
+properties:
+1. based on a distance/similarity metric
+1. membership criteria determined with proxies, and metric thresholds computed based on p-values
+1. based on components, rather than clusters
+1. stable
+1. significantcomments:
+Technically, the classification is actually a rule, that takes in points in the data space, and returns the type(s) this point belongs to, along with confidence values for the estimate. It will be implemented as a program. (By contrast, a component is a subset of points in the data set of a sample; a component is descriptive, whereas a type is prescriptive).Since we are using components rather than clusters, we can't use centroids as proxies, but we can choose proxies in other ways. The best way will be, rather than picking which type does this patient most likely belong to, to use proxies and associated distance measures, and membership will be determined by cut-offs. This makes the classification a cover rather than a partition.  "
+37,,,mom.oddsRatios,To-Do,,,Medium,,,,28 Dec 2019,Jack Morrice,"type: statistic, report
+purpose:  quantifies relative risk, for a chosen set of malign phenotypes and/or treatment responses, for each type in the cover 
+properties:
+1. each ratio is computed for a given type and malign phenotype risk with respect to a healthy control population
+2. the ""profile"" is the set of all ratios for a chosen set of malign phenotype, or drug response, for fixed type. The report should just be an update of the panGenome.oddsRatios report.comments: In this case, the metric that provides the cover will be a composite metric derived from some chain, with weights somehow fixed. Depending on how well panGenome.oddsRatios went, this should simply be an update of information, and should not take too long, or involve any program or test design. we might have to recompute the type cover many times, and then recompute the odds ratio profiles for the cover, such that we end up with the sharpest, or most informative odds ratio profiles. So, in the previous items, we ask for a type cover, or a metric class. There were are asking for the method. Here, we want the best odds ratio profiles, which will mean going back through the process again several times till we find the best. Thus, the looping aspect comes into this item. "
+27,,,mom.manuscript,To-Do,,,Medium,,,,28 Dec 2019,Jack Morrice,"type: document
+purpose:  the draft article to be submitted to a relevant journal that summarises the multiOmic work.
+contents:
+1. structured abstract
+1. introduction using the literature review from the review project
+1. summary of reports on the completed WBS items for this project
+1. discussion and conclusioncomments:
+Since a lot will overlap with the panGenome project, it makes sense to refer to the panGenome paper for many of the details that haven't changed, and only highlight here the ones that have. The only aspect we expect to change significantly is the move from metric classes to composite metric classes, based on chains. For each of the above artifacts (metricChain, significanceTest, typeCover, oddsRatios) we will be writing a short report on completion. This article will mostly be a summary of those reports, tailored to our chosen journal and audience. "
+39,,,mom.publishedCode,To-Do,,,Medium,,,,29 Dec 2019,Jack Morrice,"type: publicly available program 
+purpose:  to compute a classification of some population based on a sample of multi-omic data, and the odds ratio profiles, for each category in the classification, of a set of malign phenotypes and treatment responses
+functionality:
+expected types of input:
+1. metric class, and options
+1. a multi-omic data sample that is representative of a desired population
+1. a set of malign phenotypes, and recorded drug responses, as recorded in the sample dataset. types of desired output:
+1. a type cover
+1. odds ratio profiles for the cover
+1. confidence levels, both in the type cover itself, and in the odds ratio profiles. 
+1. graphical visualisation of the components, the proxies, the action of the metric used. constraints: must be able to run on a small number of supercomputer cores in parallel, but must also run on a decent laptop if the data is small enough. comments: saved as a github ""project"" alongside working examples, a reference manual, and some small tutorials. This program will be version 2 of the panGenome program we have already uploaded. We definitely could leave them up as two separate programs (i.e. keep making old versions available) but we must make it clear that this version covers and succeeds the panGenome one. The program will be a consolidation of the entire multiOmic pipeline. We should publish to Github as soon as we submit the paper for publication, so that the journal reviewers can see it. "

@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+# turn task list
+#  into network diagram
+#
+
+# typical calls of this script might be:
+# depmap -g <label>		// generate network diagram files
+# depmap -u <label>		// update network diagram files
+
+genOrUp=$1
+label=$2
+src=/home/jack/Local/Organization/Planner2/src/
+
+if [[ $genOrUp == '-g' ]]; then
+	python ${src}depmap.gen.py ${label}
+	dot -Tps ${label}.edges.gv -o ${label}.edges.ps
+elif [[ $genOrUp == '-u' ]]; then
+	FILE=${label}.edges.gv
+	if [[ ! -f "$FILE" ]]; then
+    	echo "depmap ERROR: $FILE doesn't exist"
+    	exit 1
+	fi
+	dot -Tps ${label}.edges.gv -o ${label}.edges.ps
+else
+	echo 'depmap ERROR: invalid option entered'
+fi
+
+

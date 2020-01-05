@@ -1,0 +1,188 @@
+digraph bigData {
+/* Nodes */
+    0  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">NGS Projects</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    </TABLE>>];
+    1  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">wait for marks</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    </TABLE>>];
+    2  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>2</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">Post-mortem</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>2</TD></TR>	// est. end date
+    </TABLE>>];
+    3  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>3</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">Workshop deadlines</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>3</TD></TR>	// est. end date
+    </TABLE>>];
+    4  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">add dates to assignments</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    </TABLE>>];
+    5  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">wait for deadlines</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    </TABLE>>];
+    6  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>4</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">collect submissions</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>4</TD></TR>	// est. end date
+    </TABLE>>];
+    7  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>2</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">Mark assignments</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>2</TD></TR>	// est. end date
+    </TABLE>>];
+    8  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">Linux</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    </TABLE>>];
+    9  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>2</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">R</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>2</TD></TR>	// est. end date
+    </TABLE>>];
+    10  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>3</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">Epi workshop</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>3</TD></TR>	// est. end date
+    </TABLE>>];
+    11  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>4</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">return assignment marks</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>4</TD></TR>	// est. end date
+    </TABLE>>];
+    12  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">Course feedback</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    </TABLE>>];
+    13  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>5</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">send out feedback forms</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>5</TD></TR>	// est. end date
+    </TABLE>>];
+    14  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>6</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">wait for replies</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>6</TD></TR>	// est. end date
+    </TABLE>>];
+    15  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>7</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">collect feedback</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>7</TD></TR>	// est. end date
+    </TABLE>>];
+    16  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>8</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">Write funders' report</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>8</TD></TR>	// est. end date
+    </TABLE>>];
+    17  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>9</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">Archive course content</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>9</TD></TR>	// est. end date
+    </TABLE>>];
+    18  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">Final team meeting</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    </TABLE>>];
+    19  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">set date</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    </TABLE>>];
+    20  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">wait for date</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    </TABLE>>];
+    21  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">collect meeting feedback</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    </TABLE>>];
+    22  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">write final report</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    </TABLE>>];
+    23  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    <TR><TD COLSPAN="2">archive project</TD></TR>
+    <TR><TD>1</TD>		// est. duration
+    	<TD>1</TD></TR>	// est. end date
+    </TABLE>>];
+/* Edges */
+    0 -> 7
+    1 -> 2
+    2 -> 3
+    3 -> 6
+    7 -> 11
+    12 -> 16
+/* Critical path */
+edge [color=red];
+    8 -> 9
+    9 -> 10
+    10 -> 11
+    11 -> 13
+    13 -> 14
+    14 -> 15
+    15 -> 16
+    16 -> 17
+}

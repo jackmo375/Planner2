@@ -1,0 +1,44 @@
+﻿"ID","ID","ID",Name,Status,Started,Completed,Priority,Start,Due,Assignee,Created,Created by,Description
+1,,,NGS Projects,To-Do,,,Medium,,10 Jul 2019,,10 Jul 2019,Jack Morrice,
+,2,,get list of all students who participated,Completed,,10 Jul 2019,Medium,,10 Jul 2019,,10 Jul 2019,Jack Morrice,
+,3,,get list of all students who submitted,Completed,,10 Jul 2019,Medium,,10 Jul 2019,,10 Jul 2019,Jack Morrice,
+,4,,add all assignments to a folder,Completed,,10 Jul 2019,Medium,,10 Jul 2019,,10 Jul 2019,Jack Morrice,
+,5,,check all are there,Completed,,10 Jul 2019,Medium,,10 Jul 2019,,10 Jul 2019,Jack Morrice,
+,6,,email Emile with note,Completed,,10 Jul 2019,Medium,,10 Jul 2019,,10 Jul 2019,Jack Morrice,"Note that I set the project considering that the students had no template for compiling an official report. Please observe the details of the assignment I gave them, and mark them accordingly.
+"
+,35,,wait for marks,To-Do,,,Medium,,,,25 Jul 2019,Jack Morrice,"$w[?]
+"
+11,,,Post-mortem,To-Do,,,Medium,,,,11 Jul 2019,Jack Morrice,"https://www.teamgantt.com/blog/post-mortem-meeting-template-and-tips
+"
+,12,,Workshop deadlines,To-Do,,,Medium,,1 Aug 2019,,11 Jul 2019,Jack Morrice,
+,,25,add dates to assignments,To-Do,,,Medium,,,,25 Jul 2019,Jack Morrice,"$t[1 hour]
+"
+,,26,wait for deadlines,To-Do,,,Medium,,,,25 Jul 2019,Jack Morrice,"$w[2 weeks]
+"
+,,27,collect submissions,To-Do,,,Medium,,,,25 Jul 2019,Jack Morrice,"$t[> 1 week]
+"
+,13,,Mark assignments,To-Do,,,Medium,,,,11 Jul 2019,Jack Morrice,
+,,21,Linux,To-Do,,,Medium,,,,23 Jul 2019,Jack Morrice,
+,,22,R,To-Do,,,Medium,,,,23 Jul 2019,Jack Morrice,
+,,24,Epi workshop,To-Do,,,Medium,,,,23 Jul 2019,Jack Morrice,
+,34,,return assignment marks,To-Do,,,Medium,,,,25 Jul 2019,Jack Morrice,"$t[>1 week]
+"
+,14,,Course feedback,To-Do,,,Medium,,,,11 Jul 2019,Jack Morrice,
+,,28,send out feedback forms,To-Do,,,Medium,,,,25 Jul 2019,Jack Morrice,"$t[>1 week]
+"
+,,29,wait for replies,To-Do,,,Medium,,,,25 Jul 2019,Jack Morrice,"$w[1 week]
+"
+,,30,collect feedback,To-Do,,,Medium,,,,25 Jul 2019,Jack Morrice,"$t[>1 week]
+"
+,20,,Write funders' report,To-Do,,,Medium,,,,23 Jul 2019,Jack Morrice,"This must include assignment marks, i.e. from Emile's project and from the SADaCC side. It must also include feedback, which I think Emile has (on vula, which means maybe I also do).
+"
+,15,,Archive course content,To-Do,,,Medium,,,,11 Jul 2019,Jack Morrice,
+,16,,Final team meeting,To-Do,,,Medium,,,,11 Jul 2019,Jack Morrice,"Ask Vicky about whether this is a good idea, and whether anyone has the time
+"
+,,31,set date,To-Do,,,Medium,,,,25 Jul 2019,Jack Morrice,
+,,32,wait for date,To-Do,,,Medium,,,,25 Jul 2019,Jack Morrice,"$w[1 week]
+"
+,,33,collect meeting feedback,To-Do,,,Medium,,,,25 Jul 2019,Jack Morrice,
+,10,,write final report,To-Do,,,Medium,,,,11 Jul 2019,Jack Morrice,"$t[1 week]
+"
+,18,,archive project,To-Do,,,Medium,,,,15 Jul 2019,Jack Morrice,

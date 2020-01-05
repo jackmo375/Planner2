@@ -1,0 +1,30 @@
+#!/bin/bash
+#
+# estimate relative deadlines
+#  for project tasks
+#
+
+# typical calls of this script might be:
+# depmap -g <label>		// generate a-o-n diagram files
+# depmap -u <label>		// update a-o-n diagram files
+
+# a-o-n: activity-on-node
+
+genOrUp=$1
+label=$2
+src=/home/jack/Local/Organization/Planner2/src/
+
+if [[ $genOrUp == '-g' ]]; then
+	python ${src}timest.gen.py ${label}
+	dot -Tps ${label}.time.gv -o ${label}.time.ps
+elif [[ $genOrUp == '-u' ]]; then
+	FILE=${label}.time.gv
+	if [[ ! -f "$FILE" ]]; then
+    	echo "timest ERROR: $FILE doesn't exist"
+    	exit 1
+	fi
+	python ${src}timest.up.py ${label}
+	dot -Tps ${label}.time.gv -o ${label}.time.ps
+else
+	echo 'timest ERROR: invalid option entered'
+fi
