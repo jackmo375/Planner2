@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# Compute:
+#	final network diagram
+#	gantt chart
+#	google calendar
+
+label=$1
+src=/home/jack/Local/Organization/Planner2/src/
+
+python ${src}gantt.gen.py ${label}
+dot -Tps ${label}.gantt.gv -o ${label}.gantt.ps
+
+python ${src}gantt.plot.py ${label}

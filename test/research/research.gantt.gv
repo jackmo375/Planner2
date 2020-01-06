@@ -1,0 +1,141 @@
+digraph research {
+/* Nodes */
+    0  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2020-02-01</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">rev.protocol</TD></TR>
+    <TR><TD>2020-02-16</TD></TR>	// schedule deadline
+    <TR><TD>2020-03-17</TD></TR>	// absolute deadline
+    </TABLE>>];
+    1  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2020-02-16</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">rev.dataCapture</TD></TR>
+    <TR><TD>2020-03-02</TD></TR>	// schedule deadline
+    <TR><TD>2020-04-01</TD></TR>	// absolute deadline
+    </TABLE>>];
+    2  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2020-03-02</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">rev.referenceList</TD></TR>
+    <TR><TD>2020-04-01</TD></TR>	// schedule deadline
+    <TR><TD>2020-05-01</TD></TR>	// absolute deadline
+    </TABLE>>];
+    3  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2020-04-01</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">rev.reviewMatrix</TD></TR>
+    <TR><TD>2020-05-31</TD></TR>	// schedule deadline
+    <TR><TD>2020-06-30</TD></TR>	// absolute deadline
+    </TABLE>>];
+    4  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2020-05-31</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">rev.summary</TD></TR>
+    <TR><TD>2020-06-30</TD></TR>	// schedule deadline
+    <TR><TD>2020-07-30</TD></TR>	// absolute deadline
+    </TABLE>>];
+    5  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2020-06-30</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">rev.narrative</TD></TR>
+    <TR><TD>2020-07-30</TD></TR>	// schedule deadline
+    <TR><TD>2020-08-29</TD></TR>	// absolute deadline
+    </TABLE>>];
+    6  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2020-07-30</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">rev.manuscript</TD></TR>
+    <TR><TD>2020-09-28</TD></TR>	// schedule deadline
+    <TR><TD>2020-10-28</TD></TR>	// absolute deadline
+    </TABLE>>];
+    7  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2020-05-31</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">pan.metricClass</TD></TR>
+    <TR><TD>2020-07-15</TD></TR>	// schedule deadline
+    <TR><TD>2020-08-14</TD></TR>	// absolute deadline
+    </TABLE>>];
+    8  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2020-07-15</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">pan.significanceTest</TD></TR>
+    <TR><TD>2020-08-29</TD></TR>	// schedule deadline
+    <TR><TD>2020-09-28</TD></TR>	// absolute deadline
+    </TABLE>>];
+    9  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2020-08-29</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">pan.typeCover</TD></TR>
+    <TR><TD>2020-10-13</TD></TR>	// schedule deadline
+    <TR><TD>2020-11-12</TD></TR>	// absolute deadline
+    </TABLE>>];
+    10  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2020-10-13</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">pan.oddsRatios</TD></TR>
+    <TR><TD>2020-11-27</TD></TR>	// schedule deadline
+    <TR><TD>2020-12-27</TD></TR>	// absolute deadline
+    </TABLE>>];
+    11  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2020-11-27</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">pan.manuscript</TD></TR>
+    <TR><TD>2021-01-26</TD></TR>	// schedule deadline
+    <TR><TD>2021-02-25</TD></TR>	// absolute deadline
+    </TABLE>>];
+    12  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2021-01-26</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">pan.publishedCode</TD></TR>
+    <TR><TD>2021-02-25</TD></TR>	// schedule deadline
+    <TR><TD>2021-03-27</TD></TR>	// absolute deadline
+    </TABLE>>];
+    13  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2020-11-27</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">mom.metricChain</TD></TR>
+    <TR><TD>2021-02-25</TD></TR>	// schedule deadline
+    <TR><TD>2021-04-26</TD></TR>	// absolute deadline
+    </TABLE>>];
+    14  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2021-02-25</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">mom.significanceTest</TD></TR>
+    <TR><TD>2021-05-26</TD></TR>	// schedule deadline
+    <TR><TD>2021-07-25</TD></TR>	// absolute deadline
+    </TABLE>>];
+    15  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2021-05-26</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">mom.typeCover</TD></TR>
+    <TR><TD>2021-08-24</TD></TR>	// schedule deadline
+    <TR><TD>2021-10-23</TD></TR>	// absolute deadline
+    </TABLE>>];
+    16  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2021-08-24</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">mom.oddsRatios</TD></TR>
+    <TR><TD>2021-10-23</TD></TR>	// schedule deadline
+    <TR><TD>2021-12-22</TD></TR>	// absolute deadline
+    </TABLE>>];
+    17  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2021-10-23</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">mom.manuscript</TD></TR>
+    <TR><TD>2021-12-22</TD></TR>	// schedule deadline
+    <TR><TD>2022-02-20</TD></TR>	// absolute deadline
+    </TABLE>>];
+    18  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR><TD>2021-12-22</TD></TR>		// est. start date
+    <TR><TD COLSPAN="1">mom.publishedCode</TD></TR>
+    <TR><TD>2022-01-21</TD></TR>	// schedule deadline
+    <TR><TD>2022-03-22</TD></TR>	// absolute deadline
+    </TABLE>>];
+/* Edges */
+    10 -> 11
+    11 -> 17
+    3 -> 4
+    4 -> 5
+    5 -> 6
+    6 -> 11
+    11 -> 12
+    12 -> 18
+/* Critical path */
+edge [color=red];
+    0 -> 1
+    1 -> 2
+    2 -> 3
+    3 -> 7
+    7 -> 8
+    8 -> 9
+    9 -> 10
+    10 -> 13
+    13 -> 14
+    14 -> 15
+    15 -> 16
+    16 -> 17
+    17 -> 18
+}

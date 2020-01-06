@@ -1,137 +1,137 @@
 digraph research {
 /* Nodes */
     0  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>1.0</TD></TR>	// est. end date
+    <TR><TD>0.5</TD>		// est. duration
+    	<TD>0.5</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">rev.protocol</TD></TR>
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>1.0</TD></TR>	// est. end date
+    <TR><TD>1.5</TD>		// est. duration
+    	<TD>1.5</TD></TR>	// est. end date
     </TABLE>>];
     1  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>2.0</TD></TR>	// est. end date
+    <TR><TD>0.5</TD>		// est. duration
+    	<TD>1.0</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">rev.dataCapture</TD></TR>
-    <TR><TD>1.0</TD>		// est. duration
+    <TR><TD>0.5</TD>		// est. duration
     	<TD>2.0</TD></TR>	// est. end date
     </TABLE>>];
     2  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
     <TR><TD>1.0</TD>		// est. duration
-    	<TD>3.0</TD></TR>	// est. end date
+    	<TD>2.0</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">rev.referenceList</TD></TR>
     <TR><TD>1.0</TD>		// est. duration
     	<TD>3.0</TD></TR>	// est. end date
     </TABLE>>];
     3  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-    <TR><TD>1.0</TD>		// est. duration
+    <TR><TD>2.0</TD>		// est. duration
     	<TD>4.0</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">rev.reviewMatrix</TD></TR>
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>4.0</TD></TR>	// est. end date
+    <TR><TD>2.0</TD>		// est. duration
+    	<TD>5.0</TD></TR>	// est. end date
     </TABLE>>];
     4  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
     <TR><TD>1.0</TD>		// est. duration
     	<TD>5.0</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">rev.summary</TD></TR>
     <TR><TD>1.0</TD>		// est. duration
-    	<TD>5.0</TD></TR>	// est. end date
+    	<TD>6.0</TD></TR>	// est. end date
     </TABLE>>];
     5  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
     <TR><TD>1.0</TD>		// est. duration
     	<TD>6.0</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">rev.narrative</TD></TR>
     <TR><TD>1.0</TD>		// est. duration
-    	<TD>6.0</TD></TR>	// est. end date
+    	<TD>7.0</TD></TR>	// est. end date
     </TABLE>>];
     6  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>7.0</TD></TR>	// est. end date
+    <TR><TD>2.0</TD>		// est. duration
+    	<TD>8.0</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">rev.manuscript</TD></TR>
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>7.0</TD></TR>	// est. end date
+    <TR><TD>2.0</TD>		// est. duration
+    	<TD>9.0</TD></TR>	// est. end date
     </TABLE>>];
     7  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>5.0</TD></TR>	// est. end date
+    <TR><TD>1.5</TD>		// est. duration
+    	<TD>5.5</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">pan.metricClass</TD></TR>
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>5.0</TD></TR>	// est. end date
+    <TR><TD>1.5</TD>		// est. duration
+    	<TD>6.5</TD></TR>	// est. end date
     </TABLE>>];
     8  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>6.0</TD></TR>	// est. end date
+    <TR><TD>1.5</TD>		// est. duration
+    	<TD>7.0</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">pan.significanceTest</TD></TR>
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>6.0</TD></TR>	// est. end date
+    <TR><TD>1.5</TD>		// est. duration
+    	<TD>8.0</TD></TR>	// est. end date
     </TABLE>>];
     9  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>7.0</TD></TR>	// est. end date
+    <TR><TD>1.5</TD>		// est. duration
+    	<TD>8.5</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">pan.typeCover</TD></TR>
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>7.0</TD></TR>	// est. end date
+    <TR><TD>1.5</TD>		// est. duration
+    	<TD>9.5</TD></TR>	// est. end date
     </TABLE>>];
     10  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>8.0</TD></TR>	// est. end date
+    <TR><TD>1.5</TD>		// est. duration
+    	<TD>10.0</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">pan.oddsRatios</TD></TR>
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>8.0</TD></TR>	// est. end date
+    <TR><TD>1.5</TD>		// est. duration
+    	<TD>11.0</TD></TR>	// est. end date
     </TABLE>>];
     11  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>9.0</TD></TR>	// est. end date
+    <TR><TD>2.0</TD>		// est. duration
+    	<TD>12.0</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">pan.manuscript</TD></TR>
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>9.0</TD></TR>	// est. end date
+    <TR><TD>2.0</TD>		// est. duration
+    	<TD>13.0</TD></TR>	// est. end date
     </TABLE>>];
     12  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
     <TR><TD>1.0</TD>		// est. duration
-    	<TD>10.0</TD></TR>	// est. end date
+    	<TD>13.0</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">pan.publishedCode</TD></TR>
     <TR><TD>1.0</TD>		// est. duration
-    	<TD>10.0</TD></TR>	// est. end date
+    	<TD>14.0</TD></TR>	// est. end date
     </TABLE>>];
     13  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>9.0</TD></TR>	// est. end date
+    <TR><TD>3.0</TD>		// est. duration
+    	<TD>13.0</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">mom.metricChain</TD></TR>
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>9.0</TD></TR>	// est. end date
+    <TR><TD>4.0</TD>		// est. duration
+    	<TD>15.0</TD></TR>	// est. end date
     </TABLE>>];
     14  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>10.0</TD></TR>	// est. end date
+    <TR><TD>3.0</TD>		// est. duration
+    	<TD>16.0</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">mom.significanceTest</TD></TR>
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>10.0</TD></TR>	// est. end date
+    <TR><TD>3.0</TD>		// est. duration
+    	<TD>18.0</TD></TR>	// est. end date
     </TABLE>>];
     15  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>11.0</TD></TR>	// est. end date
+    <TR><TD>3.0</TD>		// est. duration
+    	<TD>19.0</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">mom.typeCover</TD></TR>
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>11.0</TD></TR>	// est. end date
+    <TR><TD>3.0</TD>		// est. duration
+    	<TD>21.0</TD></TR>	// est. end date
     </TABLE>>];
     16  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>12.0</TD></TR>	// est. end date
+    <TR><TD>2.0</TD>		// est. duration
+    	<TD>21.0</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">mom.oddsRatios</TD></TR>
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>12.0</TD></TR>	// est. end date
+    <TR><TD>2.0</TD>		// est. duration
+    	<TD>23.0</TD></TR>	// est. end date
     </TABLE>>];
     17  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>13.0</TD></TR>	// est. end date
+    <TR><TD>2.0</TD>		// est. duration
+    	<TD>23.0</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">mom.manuscript</TD></TR>
-    <TR><TD>1.0</TD>		// est. duration
-    	<TD>13.0</TD></TR>	// est. end date
+    <TR><TD>2.0</TD>		// est. duration
+    	<TD>25.0</TD></TR>	// est. end date
     </TABLE>>];
     18  [shape=none, margin=0, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
     <TR><TD>1.0</TD>		// est. duration
-    	<TD>14.0</TD></TR>	// est. end date
+    	<TD>24.0</TD></TR>	// est. end date
     <TR><TD COLSPAN="2">mom.publishedCode</TD></TR>
     <TR><TD>1.0</TD>		// est. duration
-    	<TD>14.0</TD></TR>	// est. end date
+    	<TD>26.0</TD></TR>	// est. end date
     </TABLE>>];
 /* Edges */
     10 -> 11
