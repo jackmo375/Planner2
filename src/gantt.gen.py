@@ -7,7 +7,7 @@ def main():
 
 	unit = 'month'
 
-	# chose day work is due to start:
+	# chose the date work is due to start on:
 	firstDay = datetime.date(2020, 2, 1)
 
 	# read network diagram from previous step:
@@ -27,7 +27,7 @@ def main():
 	b.togantt(label, step)
 
 	# ...google calendar:
-
+	b.toical(label, step)
 
 if __name__ == '__main__':
 	main()

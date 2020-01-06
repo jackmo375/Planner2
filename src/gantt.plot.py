@@ -84,7 +84,7 @@ def CreateGanttChart(projectLabel, planningStep):
     ax.invert_yaxis()
     fig.autofmt_xdate()
     plt.savefig(projectLabel+'.gantt.pdf')
-    plt.show()
+    #plt.show()
 
 
 def _create_date(datetxt):

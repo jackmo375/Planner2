@@ -48,6 +48,28 @@ class GanttNode(Node):
 	def togantt(self, out):
 		out.write(self.label + ',' + self.startDate.strftime('%Y-%m-%d') + ',' + self.deadlines[0].strftime('%Y-%m-%d') + ',' + self.deadlines[1].strftime('%Y-%m-%d'))
 
+	def toical(self, out):
+		out.write('BEGIN:VEVENT\n')
+		out.write('SUMMARY:' + self.label + '\n')
+		out.write(
+			'DTSTART;VALUE=DATE:'
+			+str(self.deadlines[0].year)
+			+format(self.deadlines[0].month, '02d')
+			+format(self.deadlines[0].day, '02d')
+			+'\n'
+		)
+		out.write(
+			'DTEND;VALUE=DATE:'
+			+str(self.deadlines[0].year)
+			+format(self.deadlines[0].month, '02d')
+			+format(self.deadlines[0].day, '02d')
+			+'\n'
+		)
+		description = ''
+		out.write('TRANSP:TRANSPARENT\n')
+		out.write('DESCRIPTION:'+description+'\n')
+		out.write('END:VEVENT\n')
+
 
 # readers:
 def fromgv(step, inputString):

@@ -8,7 +8,10 @@
 label=$1
 src=/home/jack/Local/Organization/Planner2/src/
 
+# finalise the network diagram:
 python ${src}gantt.gen.py ${label}
 dot -Tps ${label}.gantt.gv -o ${label}.gantt.ps
 
+# print the gantt chart:
 python ${src}gantt.plot.py ${label}
+rm ${label}.gantt.txt

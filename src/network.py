@@ -73,19 +73,46 @@ class Network:
 		outstream.close()
 
 	def togantt(self, label, step):
-		outstream = open(label+step+'.txt', 'w')
 		# check the nodes are Gantt nodes:
 		if self.nodes[0].__class__.__name__ != 'GanttNode':
 			raise Exception('Network Error: can only print Gantt charts for Gantt nodes')
 
+		outstream = open(label+step+'.txt', 'w')
 		for n in self.nodes:
 			n.togantt(outstream)
 			outstream.write('\n')
 		outstream.close()
 
+	def toical(self, label, step):
+		if self.nodes[0].__class__.__name__ != 'GanttNode':
+			raise Exception('Network Error: can only print calendars for Gantt nodes')
+
+		outstream = open(label+step+'.ical', 'w')
+		self._beginCalendar(label, outstream)
+		for n in self.nodes:
+			n.toical(outstream)
+		self._endCalendar(outstream)
+
+		outstream.close()
+
+
 	# Private members
 	def _beginGraph(self, out, graphName):
 		out.write("digraph "+graphName+" {\n")
+
+	def _beginCalendar(self, label, out):
+		out.write(
+			'BEGIN:VCALENDAR\n'
+			+ 'PRODID:-//K Desktop Environment//NONSGML libkcal 4.3//EN\n'
+			+ 'VERSION:2.0\n'
+			+ 'X-KDE-ICAL-IMPLEMENTATION-VERSION:1.0\n'
+			+ 'X-WR-CALNAME:'+label+'\n'
+			+ 'X-WR-TIMEZONE:Africa/Johannesburg\n'
+		)
+	def _endCalendar(self, out):
+		out.write(
+			'END:VCALENDAR'
+		)
 
 
 # Readers:
